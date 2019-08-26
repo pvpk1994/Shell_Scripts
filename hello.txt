@@ -1,0 +1,21 @@
+Fri Jan 18 17:06:44 CST 2019
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+    0     1     0   0 12Dec18 ??        89:41.41 /sbin/launchd
+    0    56     1   0 12Dec18 ??         1:51.24 /usr/sbin/syslogd
+    0    57     1   0 12Dec18 ??         2:38.78 /usr/libexec/UserEventAgent (System)
+    0    60     1   0 12Dec18 ??         1:30.07 /System/Library/PrivateFrameworks/Uninstall.framework/Resources/uninstalld
+=================
+Fri Jan 18 17:17:07 CST 2019
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+    0     1     0   0 12Dec18 ??        89:43.00 /sbin/launchd
+    0    56     1   0 12Dec18 ??         1:51.28 /usr/sbin/syslogd
+    0    57     1   0 12Dec18 ??         2:38.83 /usr/libexec/UserEventAgent (System)
+    0    60     1   0 12Dec18 ??         1:30.10 /System/Library/PrivateFrameworks/Uninstall.framework/Resources/uninstalld
+=================
+Fri Jan 18 17:18:21 CST 2019
+  UID   PID  PPID   C STIME   TTY           TIME CMD
+    0     1     0   0 12Dec18 ??        89:43.16 /sbin/launchd
+    0    56     1   0 12Dec18 ??         1:51.28 /usr/sbin/syslogd
+    0    57     1   0 12Dec18 ??         2:38.84 /usr/libexec/UserEventAgent (System)
+    0    60     1   0 12Dec18 ??         1:30.10 /System/Library/PrivateFrameworks/Uninstall.framework/Resources/uninstalld
+=================
