@@ -23,7 +23,7 @@ do
 				usage
 			fi
             LOC_SET=1
-			shift
+			shift # shift ignores the comments 
 			shift
 			;;
 
