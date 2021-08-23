@@ -34,6 +34,7 @@ do
 			;;
 
 		-s|--stats )
+            STATS=1
 			shift
 			;;
 
@@ -61,8 +62,13 @@ if [ "$EXT" != "" ]; then
         echo "No file with extension $EXT found"
         exit 2 # return with exit status 2
     fi
+    
+    # if here: files with extension exists => therefore count its sizes
+    # NOTE: size.awk script is local to this directory. Need to fix this
+    ls -l $LOCATION | awk '/^-/' | grep "\.$EXT$" | awk -v stats=$STATS -f size.awk
+
+# if extension is not set
+else
+    # NOTE: size.awk script is local to this directory. Need to fix this
+    ls -l $LOCATION | awk '/^-/' | awk -v stats=$STATS -f size.awk
 fi
-
-
-
-
