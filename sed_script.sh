@@ -49,8 +49,10 @@ fi
             
 # To display graphically spaced errors
 if [ -f "$FILE" ]; then
+    LINES=0
     while IFS= read -r line # internal field separator
     do
+    let LINES++
     # If there is no space/tab issue, print the line
     # If space/tabs found at the beginning of the line, exit with status 7
     # if space/tabs found at the end of the line, exit with status 9
@@ -58,9 +60,12 @@ if [ -f "$FILE" ]; then
     
     # If no errors, print the line
     if [ $? -eq 0 ]; then
-        echo "$line"
+        printf %4s "$LINES:" >> tmp.txt # 4 character places
+        echo "$line" >> tmp.txt
         continue # read next line
     fi
     
     done < "$FILE"
+    cat tmp.txt
+    rm tmp.txt
 fi
